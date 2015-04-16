@@ -1,0 +1,21 @@
+version: {{#if version}} {{{version}}} {{else}} {{{@version}}}{{/if}}
+width: {{#if width}} {{{width}}} {{else}} 80 {{/if}}
+height: {{#if height}} {{{height}}} {{else}} 24 {{/if}}
+{{#if duration}}
+duration: {{{duration}}}
+{{/if}}
+{{#if command}}
+command: {{{command}}}
+{{/if}}
+{{#if title}}
+title: {{{title}}}
+{{/if}}
+env:
+  TERM: {{{env.term}}}
+  SHELL: {{{env.shell}}}
+stdout:
+  {{#stdout}}
+  -
+    - {{#if delay}} {{{delay}}} {{else}} 1 {{/if}}
+    - {{{data}}}
+  {{/stdout}}

@@ -1,0 +1,52 @@
+name: asciinema
+version: 0.1.0
+description: '[asciinema](http://asciinema.org) generator for [Crystal](http://crystal.sh)'
+
+author:
+  name: Chris Tate
+  email: chris@studiotate.com
+  url: http://studiotate.com
+copyright: 2015 Studio Tate
+
+gen:
+  file:
+    asciicast.yml:
+      dest: asciicast.json
+      decoder: yaml
+      encoder: json
+  schema:
+    type: object
+    properties:
+      command:
+        type: string
+      env:
+        required: true
+        type: object
+        properties:
+          shell:
+            type: string
+          term:
+            type: string
+      duration:
+        type: number
+      height:
+        type: number
+      stdout:
+        type: array
+        items:
+          type: object
+          properties:
+            delay:
+              type: number
+            data:
+              type: string
+      title:
+        type: string
+      version:
+        type: number
+      width:
+        type: number
+
+generators:
+  project:
+    version: latest

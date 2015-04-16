@@ -1,0 +1,23 @@
+{
+	"version": "0.1.0",
+	"width": 80,
+	"height": 80,
+	"env": {
+		"TERM": "screen-256color",
+		"SHELL": "/bin/zsh"
+	},
+	"stdout": [
+		[
+			0.4,
+			"ls"
+		],
+		[
+			1,
+			"."
+		],
+		[
+			1,
+			".."
+		]
+	]
+}
