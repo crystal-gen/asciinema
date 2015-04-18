@@ -12,6 +12,17 @@ repository:
   type: git
   url: https://github.com/studiotate/crystal-asciinema.git
 
+doc:
+  usage:
+    title: Usage
+    pages:
+      schema:
+        title: Schema
+      example:
+        title: Example
+      output:
+        title: Output
+
 gen:
   file:
     asciicast.yml:

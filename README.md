@@ -1,10 +1,14 @@
 # asciinema v0.1.0
 
+
 [asciinema](http://asciinema.org) generator for [Crystal](http://crystal.sh)
 
-# Schema
 
-```yml
+# Usage
+
+## Schema
+
+```yaml
 command:  # string
 env:      # object
   shell:  # string
@@ -19,9 +23,10 @@ version:  # number
 width:    # number
 ```
 
-# Example
 
-```yml
+## Example
+
+```yaml
 generators:
   asciinema:
     spec:
@@ -42,7 +47,10 @@ generators:
     version: latest
 ```
 
-# Output
+
+## Output
+
+### lib/asciicast.json
 
 ```json
 {
@@ -72,3 +80,5 @@ generators:
 	]
 }
 ```
+
+
